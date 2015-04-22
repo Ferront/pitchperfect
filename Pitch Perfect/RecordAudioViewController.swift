@@ -19,9 +19,13 @@ class RecordAudioViewController: UIViewController, AVAudioRecorderDelegate
     var audioRecorder:AVAudioRecorder!
     var recordedAudio:RecordedAudio!
     
+    @IBOutlet weak var jeBosse: UIActivityIndicatorView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,6 +35,7 @@ class RecordAudioViewController: UIViewController, AVAudioRecorderDelegate
     
     override func viewWillAppear(animated: Bool) {
         stopButton.hidden=true
+        jeBosse.hidden=true
     }
     
     @IBAction func RecordAudio(sender: UIButton) {
@@ -39,7 +44,10 @@ class RecordAudioViewController: UIViewController, AVAudioRecorderDelegate
         recordingInProgress.text=nil
         stopButton.hidden=false
         mic.hidden=true   //I find more relevant to hide the button instead of mic.enable=true
-
+        
+        jeBosse.hidden=false
+       // Grossir l'indicateur ? jeBosse.activityIndicatorViewStyle(UIActivityIndicatorViewStyleWhiteLarge)
+        jeBosse.startAnimating()
         
         // TODO record user voice
  
@@ -90,6 +98,9 @@ class RecordAudioViewController: UIViewController, AVAudioRecorderDelegate
         recordingInProgress.text="Appuyer pour enregistrer"
         stopButton.hidden=true
         mic.hidden=false    //Show the microphone button again
+        jeBosse.hidden=true
+        jeBosse.stopAnimating()
+        
         audioRecorder.stop()
         var audioSession = AVAudioSession.sharedInstance()
 
