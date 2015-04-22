@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wJs-9Z-5lE">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -19,9 +20,6 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.24999999999999967" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="decoration" translatesAutoresizingMaskIntoConstraints="NO" id="d77-fe-spU">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="-552" y="-344" width="1500" height="1451"/>
-                                </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyW-6I-rgf">
                                 <rect key="frame" x="277" y="285" width="74" height="30"/>
@@ -49,9 +47,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
+                                <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
-                                    <rect key="frame" x="126" y="440" width="145" height="16"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -73,14 +70,14 @@
                                 <exclude reference="uMO-nh-bd5"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Pah-pd-vuU"/>
-                                <exclude reference="x1P-Lu-fKe"/>
                                 <exclude reference="ooG-bK-fOT"/>
                                 <exclude reference="wvr-Da-jjb"/>
                                 <exclude reference="ZBx-1d-e9h"/>
                                 <exclude reference="ima-so-fls"/>
                                 <exclude reference="ARJ-p8-GyI"/>
                                 <exclude reference="DwL-RG-fMh"/>
+                                <exclude reference="Pah-pd-vuU"/>
+                                <exclude reference="x1P-Lu-fKe"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -90,14 +87,14 @@
                                 <include reference="uMO-nh-bd5"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Pah-pd-vuU"/>
-                                <include reference="x1P-Lu-fKe"/>
                                 <include reference="ooG-bK-fOT"/>
                                 <include reference="wvr-Da-jjb"/>
                                 <include reference="ZBx-1d-e9h"/>
                                 <include reference="ima-so-fls"/>
                                 <include reference="ARJ-p8-GyI"/>
                                 <include reference="DwL-RG-fMh"/>
+                                <include reference="Pah-pd-vuU"/>
+                                <include reference="x1P-Lu-fKe"/>
                             </mask>
                         </variation>
                     </view>
@@ -138,9 +135,6 @@
                                 <state key="normal" image="Snail">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="76" y="89" width="100" height="100"/>
-                                </variation>
                                 <connections>
                                     <action selector="playSlow:" destination="BNy-l2-VSF" eventType="touchUpInside" id="qKn-sA-jXf"/>
                                 </connections>
@@ -150,9 +144,6 @@
                                 <state key="normal" image="Rabbit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="226" y="89" width="100" height="100"/>
-                                </variation>
                                 <connections>
                                     <action selector="playFast:" destination="BNy-l2-VSF" eventType="touchUpInside" id="lJU-Q7-nL9"/>
                                 </connections>
@@ -171,9 +162,6 @@
                                 <state key="normal" image="darkvador">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="226" y="239" width="100" height="100"/>
-                                </variation>
                                 <connections>
                                     <action selector="playdarkvador:" destination="BNy-l2-VSF" eventType="touchUpInside" id="Tp3-TP-hF8"/>
                                 </connections>
@@ -183,9 +171,6 @@
                                 <state key="normal" image="Ecureuil">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="76" y="239" width="100" height="100"/>
-                                </variation>
                                 <connections>
                                     <action selector="playChipmunk:" destination="BNy-l2-VSF" eventType="touchUpInside" id="wwj-0m-h3D"/>
                                 </connections>
@@ -214,8 +199,6 @@
                                 <exclude reference="GeI-WT-NI2"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="3Xp-iN-gbU"/>
-                                <exclude reference="HEQ-J7-ZHG"/>
                                 <exclude reference="hAO-6c-T0d"/>
                                 <exclude reference="qxk-tG-Z1A"/>
                                 <exclude reference="3cc-H2-u1M"/>
@@ -224,6 +207,8 @@
                                 <exclude reference="3Mh-rW-ilU"/>
                                 <exclude reference="as9-mU-Wvv"/>
                                 <exclude reference="haY-aa-Kj3"/>
+                                <exclude reference="3Xp-iN-gbU"/>
+                                <exclude reference="HEQ-J7-ZHG"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -236,8 +221,6 @@
                                 <include reference="GeI-WT-NI2"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="3Xp-iN-gbU"/>
-                                <include reference="HEQ-J7-ZHG"/>
                                 <include reference="hAO-6c-T0d"/>
                                 <include reference="qxk-tG-Z1A"/>
                                 <include reference="3cc-H2-u1M"/>
@@ -246,6 +229,8 @@
                                 <include reference="3Mh-rW-ilU"/>
                                 <include reference="as9-mU-Wvv"/>
                                 <include reference="haY-aa-Kj3"/>
+                                <include reference="3Xp-iN-gbU"/>
+                                <include reference="HEQ-J7-ZHG"/>
                             </mask>
                         </variation>
                     </view>
