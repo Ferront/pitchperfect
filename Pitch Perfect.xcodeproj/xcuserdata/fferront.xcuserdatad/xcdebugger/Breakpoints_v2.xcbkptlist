@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pitch Perfect/PlaySoundViewController.swift"
+            timestampString = "451208900.648957"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "playFast(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pitch Perfect/PlaySoundViewController.swift"
+            timestampString = "451175385.424921"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "PlaySoundViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pitch_Perfect.PlaySoundViewController.audioPlayer.getter : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.AVAudioPlayer&gt;"
+                  moduleName = "Pitch Perfect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fferront/Documents/iOS%20Course/Projects/Pitch%20Perfect/Pitch%20Perfect/Pitch%20Perfect/PlaySoundViewController.swift"
+                  timestampString = "450118864.975385"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pitch_Perfect.PlaySoundViewController.audioPlayer.materializeForSet : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.AVAudioPlayer&gt;"
+                  moduleName = "Pitch Perfect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fferront/Documents/iOS%20Course/Projects/Pitch%20Perfect/Pitch%20Perfect/Pitch%20Perfect/PlaySoundViewController.swift"
+                  timestampString = "450118864.975806"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "25">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pitch_Perfect.PlaySoundViewController.init (Pitch_Perfect.PlaySoundViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; Pitch_Perfect.PlaySoundViewController"
+                  moduleName = "Pitch Perfect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fferront/Documents/iOS%20Course/Projects/Pitch%20Perfect/Pitch%20Perfect/Pitch%20Perfect/PlaySoundViewController.swift"
+                  timestampString = "450118864.975955"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pitch_Perfect.PlaySoundViewController.init (Pitch_Perfect.PlaySoundViewController.Type)() -&gt; Pitch_Perfect.PlaySoundViewController"
+                  moduleName = "Pitch Perfect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fferront/Documents/iOS%20Course/Projects/Pitch%20Perfect/Pitch%20Perfect/Pitch%20Perfect/PlaySoundViewController.swift"
+                  timestampString = "450118864.976117"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "29">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pitch_Perfect.PlaySoundViewController.init (Pitch_Perfect.PlaySoundViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; Pitch_Perfect.PlaySoundViewController"
+                  moduleName = "Pitch Perfect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fferront/Documents/iOS%20Course/Projects/Pitch%20Perfect/Pitch%20Perfect/Pitch%20Perfect/PlaySoundViewController.swift"
+                  timestampString = "450118864.976264"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pitch Perfect/RecordAudioViewController.swift"
+            timestampString = "451207358.130737"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "RecordAudioViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pitch Perfect/PlaySoundViewController.swift"
+            timestampString = "451175385.424921"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
