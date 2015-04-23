@@ -44,46 +44,39 @@ class PlaySoundViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    @IBAction func playFast(sender: AnyObject) {
+    func initAll(){
         audioPlayer.stop()
+        audioEngine.stop()
+        audioEngine.reset()
         audioPlayer.currentTime=0
         stopAudio.enabled=true
-        audioPlayer.rate=1.5
+    }
+    
+    func changePitch (myPitch:Float){
+        initAll()
+        audioPlayer.rate=myPitch
         audioPlayer.play()
-        
+    }
+    
+    @IBAction func playFast(sender: AnyObject) {
+        changePitch(1.5)
     }
     
    @IBAction func playSlow(sender: AnyObject) {
-        audioPlayer.stop()
-        audioPlayer.currentTime=0
-        stopAudio.enabled=true
-        audioPlayer.rate=0.5
-        audioPlayer.play()
-
+        changePitch(0.5)
     }
 
     @IBAction func playChipmunk(sender: UIButton) {
-        audioPlayer.stop()
-        audioPlayer.currentTime=0
-        stopAudio.enabled=true
-        
         playAudioWithVariablePitch(1000)
     }
     
     @IBAction func playdarkvador(sender: UIButton) {
-        audioPlayer.stop()
-        audioPlayer.currentTime=0
-        stopAudio.enabled=true
-        
         playAudioWithVariablePitch(-900)
     }
     
     
     func playAudioWithVariablePitch(pitch:Float){
-        audioPlayer.stop()
-        audioEngine.stop()
-        audioEngine.reset()
+        initAll()
         
         var audioPlayerNode = AVAudioPlayerNode()
         audioEngine.attachNode(audioPlayerNode)
@@ -108,14 +101,5 @@ class PlaySoundViewController: UIViewController {
         audioEngine.stop()
         stopAudio.enabled=false
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }

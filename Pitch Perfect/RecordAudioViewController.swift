@@ -21,19 +21,9 @@ class RecordAudioViewController: UIViewController, AVAudioRecorderDelegate
     
     @IBOutlet weak var jeBosse: UIActivityIndicatorView!
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
         stopButton.hidden=true
         jeBosse.hidden=true
     }
@@ -46,7 +36,6 @@ class RecordAudioViewController: UIViewController, AVAudioRecorderDelegate
         mic.hidden=true   //I find more relevant to hide the button instead of mic.enable=true
         
         jeBosse.hidden=false
-       // Grossir l'indicateur ? jeBosse.activityIndicatorViewStyle(UIActivityIndicatorViewStyleWhiteLarge)
         jeBosse.startAnimating()
         
         // TODO record user voice
